@@ -27,15 +27,16 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             c.setSuit(Card.SUITS[(int) (Math.random() * 4)]);
             magicHand[i] = c;
+            
+            System.out.println(c.getSuit() + " " + c.getValue());
         }
 
         //insert code to ask the user for Card value and suit, create their card
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter a numebr: ");
+        System.out.println("Enter a number and suit: ");
         int input = in.nextInt();
-        System.out.print("Enter a suit: ");
         String suit;
-        suit = in.nextLine();
+        suit = in.next();
         Card userInput = new Card();
         userInput.setValue(input);
         userInput.setSuit(suit);
