@@ -67,6 +67,11 @@ public class CardTrick {
             }
 
         }
+        if (luckyCardFound) {
+            System.out.println("Yayyy!! Your lucky card was found");
+        } else {
+            System.out.println("Oops! Your lucky card was not found");
+        }
     }
 
 }
